@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8ed3e30-e0b9-46d5-a7e7-3d2baa0bd7dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/Makefile.checker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/bss.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/check_exec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/check_perm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/data_bss.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/hello.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/inv_perm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/lib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/no_perm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/qsort.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/inputs/sum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/loader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/refs/test2.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/refs/test3.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/refs/test4.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/refs/test5.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/refs/test8.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/refs/test9.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/run_test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/run_test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/_test/test_lib.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-lin/run_all.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/GNUmakefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/NMakefile.checker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/bss.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/check_exec.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/check_perm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/data_bss.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/hello.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/inv_perm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/no_perm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/qsort.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/inputs/sum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/loader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/refs/test2.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/refs/test3.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/refs/test4.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/refs/test5.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/refs/test8.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/refs/test9.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/run_test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/run_test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/_test/test_lib.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/checker-win/run_all.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/Makefile.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/exec/exec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/loader/debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/loader/exec_parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/loader/exec_parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/loader/loader.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/loader/loader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-lin/test_prog/hello.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/Makefile.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/exec/exec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/exec/exec.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/exec/exec.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/exec/exec.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/loader.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/loader/debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/loader/exec_parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/loader/exec_parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/loader/loader.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/loader/loader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/loader/loader.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/loader/loader.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/loader/loader.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/test_prog/hello.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/test_prog/test_prog.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/test_prog/test_prog.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/skel-win/test_prog/test_prog.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/3-loader/util/loader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/README.example.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/checkpatch_wrapper.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/so-create-repo.sh" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1raEF9Y3hG2RlBfpULnzL8pPIkl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8ed3e30-e0b9-46d5-a7e7-3d2baa0bd7dc" name="Default Changelist" comment="" />
+      <created>1619205699208</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619205699208</updated>
+      <workItem from="1619205702890" duration="1000" />
+    </task>
+    <servers />
+  </component>
+</project>
