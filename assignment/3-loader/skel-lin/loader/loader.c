@@ -48,48 +48,43 @@ void initSegmentData(int segment_index)
 
 	number_of_pages = exec->segments[segment_index].mem_size / pageSize;
 	if (exec->segments[segment_index].mem_size % pageSize != 0) {
-		number_of_pages += 1;
 	}
+		number_of_pages += 1;
 	exec->segments[segment_index].data = calloc(number_of_pages, sizeof(page_info_t));
+	printf("no of pages: [%d]\n", number_of_pages);
 }
 
-char * call_mmap(int segment_index, int page) {
+char* call_mmap(int segment_index, int page) {
 	return mmap((void*) exec->segments[segment_index].vaddr +
 			pageSize * page,
 			pageSize,
 			exec->segments[segment_index].perm,
-			MAP_FIXED | MAP_SHARED,
-			fd, 0);
+			MAP_FIXED | MAP_PRIVATE,
+			fd,
+			exec->segments[segment_index].offset + pageSize * page);
 }
 
 void legal_page_fault(int segment_index, int page) {
-	char *mmap_addr, *buf = calloc(pageSize, sizeof(char));
+	char *mmap_addr;
 	unsigned int mem_size = exec->segments[segment_index].mem_size;
 	unsigned int file_size = exec->segments[segment_index].file_size;
 	int size_to_write = pageSize;
 
-	memset(buf, 0, pageSize);
 
 	printf("mapez [%d] -> [%d]\n", exec->segments[segment_index].vaddr +
 			pageSize * page, exec->segments[segment_index].vaddr +
 			pageSize * page + pageSize);
 
 	mmap_addr = call_mmap(segment_index, page);
-
 	if (mmap_addr == MAP_FAILED) {
 		printf("map failed\n");
 	}
+	// printf("res: [%d]\n", res);
 	((page_info_t*)exec->segments[segment_index].data)[page].mapped = 1;
 
 	if (mem_size > file_size) {
 		size_to_write -= (file_size - page * pageSize);
 	}
-	printf("size to write: [%d]\n", size_to_write);
-	lseek(fd, exec->segments[segment_index].offset, SEEK_SET);
-	read(fd, buf, size_to_write);
-	printf("mmap addr [%d]\n", mmap_addr);
-	// memcpy(mmap_addr, buf, size_to_write);
-	// memcpy(mmap_addr + size_to_write, 0, pageSize - size_to_write);
 }
 
 static void segv_handler(int signum, siginfo_t *info, void *context)
@@ -110,6 +105,8 @@ static void segv_handler(int signum, siginfo_t *info, void *context)
 	if (exec->segments[segment_index].data == NULL) {
 		initSegmentData(segment_index);
 	}
+	printf("segment [%d]", segment_index);
+	printf("page [%d]", page);
 	data = exec->segments[segment_index].data;
 	if (data[page].mapped == 1) {
 		old_action.sa_sigaction(signum, info, context);
@@ -145,7 +142,7 @@ int so_init_loader(void)
 
 int so_execute(char *path, char *argv[])
 {
-	fd = open(path, O_RDONLY, 0777);
+	fd = open(path, O_RDONLY, 0744);
 
 	exec = so_parse_exec(path);
 	if (!exec)
