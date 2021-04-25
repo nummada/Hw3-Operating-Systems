@@ -140,6 +140,9 @@ test_ref()
 	[ -z "$op" ] && op="-eq"
 
 	LD_LIBRARY_PATH=. "$loader_main" "$bin" "$FAULT_CNT_F" &> $OUT_F
+	
+	cat $OUT_F
+
 	RUN_RC=$?
 
 	recorded_faults=$(get_recorded_faults)

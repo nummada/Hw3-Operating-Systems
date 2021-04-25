@@ -92,7 +92,7 @@ function compare()
 
 basic_test()
 {
-	DEBUG echo "TEST: $@"
+	DEBUG echo "TEST: $@ <xdxdxdxd>"
 	printf "%02d) %s" "$test_index" "$description"
 
 	for ((i = 0; i < 56 - ${#description}; i++)); do
